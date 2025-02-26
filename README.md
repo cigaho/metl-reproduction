@@ -34,29 +34,31 @@ Source models predict Rosetta energy terms.
 
 | Identifier      | UUID       | Params | RPE | Output           | Description | Download                                                                                   |
 |-----------------|------------|--------|-----|------------------|-------------|--------------------------------------------------------------------------------------------|
-| `METL-G-20M-1D` | `D72M9aEp` | 20M    | 1D  | Rosetta energies | METL-G      | [Download](https://zenodo.org/records/11051645/files/METL-G-20M-1D-D72M9aEp.pt?download=1) |
-| `METL-G-20M-3D` | `Nr9zCKpR` | 20M    | 3D  | Rosetta energies | METL-G      | [Download](https://zenodo.org/records/11051645/files/METL-G-20M-3D-Nr9zCKpR.pt?download=1) |
-| `METL-G-50M-1D` | `auKdzzwX` | 50M    | 1D  | Rosetta energies | METL-G      | [Download](https://zenodo.org/records/11051645/files/METL-G-50M-1D-auKdzzwX.pt?download=1) |
-| `METL-G-50M-3D` | `6PSAzdfv` | 50M    | 3D  | Rosetta energies | METL-G      | [Download](https://zenodo.org/records/11051645/files/METL-G-50M-3D-6PSAzdfv.pt?download=1) |
+| `METL-G-20M-1D` | `D72M9aEp` | 20M    | 1D  | Rosetta energies | METL-G      | [Download](https://zenodo.org/records/14908509/files/METL-G-20M-1D-D72M9aEp.pt?download=1) |
+| `METL-G-20M-3D` | `Nr9zCKpR` | 20M    | 3D  | Rosetta energies | METL-G      | [Download](https://zenodo.org/records/14908509/files/METL-G-20M-3D-Nr9zCKpR.pt?download=1) |
+| `METL-G-50M-1D` | `auKdzzwX` | 50M    | 1D  | Rosetta energies | METL-G      | [Download](https://zenodo.org/records/14908509/files/METL-G-50M-1D-auKdzzwX.pt?download=1) |
+| `METL-G-50M-3D` | `6PSAzdfv` | 50M    | 3D  | Rosetta energies | METL-G      | [Download](https://zenodo.org/records/14908509/files/METL-G-50M-3D-6PSAzdfv.pt?download=1) |
 
 ### Local source models
 
 | Identifier               | UUID       | Protein | Params | RPE | Output           | Description | Download                                                                                            |
 |--------------------------|------------|---------|--------|-----|------------------|-------------|-----------------------------------------------------------------------------------------------------|
-| `METL-L-2M-1D-GFP`       | `8gMPQJy4` | avGFP   | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/11051645/files/METL-L-2M-1D-GFP-8gMPQJy4.pt?download=1)       |
-| `METL-L-2M-3D-GFP`       | `Hr4GNHws` | avGFP   | 2M     | 3D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/11051645/files/METL-L-2M-3D-GFP-Hr4GNHws.pt?download=1)       |
-| `METL-L-2M-1D-DLG4_2022` | `8iFoiYw2` | DLG4    | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/11051645/files/METL-L-2M-1D-DLG4_2022-8iFoiYw2.pt?download=1) |
-| `METL-L-2M-3D-DLG4_2022` | `kt5DdWTa` | DLG4    | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/11051645/files/METL-L-2M-3D-DLG4_2022-kt5DdWTa.pt?download=1) |
-| `METL-L-2M-1D-GB1`       | `DMfkjVzT` | GB1     | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/11051645/files/METL-L-2M-1D-GB1-DMfkjVzT.pt?download=1)       |
-| `METL-L-2M-3D-GB1`       | `epegcFiH` | GB1     | 2M     | 3D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/11051645/files/METL-L-2M-3D-GB1-epegcFiH.pt?download=1)       |
-| `METL-L-2M-1D-GRB2`      | `kS3rUS7h` | GRB2    | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/11051645/files/METL-L-2M-1D-GRB2-kS3rUS7h.pt?download=1)      |
-| `METL-L-2M-3D-GRB2`      | `X7w83g6S` | GRB2    | 2M     | 3D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/11051645/files/METL-L-2M-3D-GRB2-X7w83g6S.pt?download=1)      |
-| `METL-L-2M-1D-Pab1`      | `UKebCQGz` | Pab1    | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/11051645/files/METL-L-2M-1D-Pab1-UKebCQGz.pt?download=1)      |
-| `METL-L-2M-3D-Pab1`      | `2rr8V4th` | Pab1    | 2M     | 3D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/11051645/files/METL-L-2M-3D-Pab1-2rr8V4th.pt?download=1)      |
-| `METL-L-2M-1D-TEM-1`     | `PREhfC22` | TEM-1   | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/11051645/files/METL-L-2M-1D-TEM-1-PREhfC22.pt?download=1)     |
-| `METL-L-2M-3D-TEM-1`     | `9ASvszux` | TEM-1   | 2M     | 3D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/11051645/files/METL-L-2M-3D-TEM-1-9ASvszux.pt?download=1)     |
-| `METL-L-2M-1D-Ube4b`     | `HscFFkAb` | Ube4b   | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/11051645/files/METL-L-2M-1D-Ube4b-HscFFkAb.pt?download=1)     |
-| `METL-L-2M-3D-Ube4b`     | `H48oiNZN` | Ube4b   | 2M     | 3D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/11051645/files/METL-L-2M-3D-Ube4b-H48oiNZN.pt?download=1)     |
+| `METL-L-2M-1D-GFP`       | `8gMPQJy4` | avGFP   | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-1D-GFP-8gMPQJy4.pt?download=1)       |
+| `METL-L-2M-3D-GFP`       | `Hr4GNHws` | avGFP   | 2M     | 3D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-3D-GFP-Hr4GNHws.pt?download=1)       |
+| `METL-L-2M-1D-DLG4_2022` | `8iFoiYw2` | DLG4    | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-1D-DLG4_2022-8iFoiYw2.pt?download=1) |
+| `METL-L-2M-3D-DLG4_2022` | `kt5DdWTa` | DLG4    | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-3D-DLG4_2022-kt5DdWTa.pt?download=1) |
+| `METL-L-2M-1D-GB1`       | `DMfkjVzT` | GB1     | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-1D-GB1-DMfkjVzT.pt?download=1)       |
+| `METL-L-2M-3D-GB1`       | `epegcFiH` | GB1     | 2M     | 3D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-3D-GB1-epegcFiH.pt?download=1)       |
+| `METL-L-2M-1D-GRB2`      | `kS3rUS7h` | GRB2    | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-1D-GRB2-kS3rUS7h.pt?download=1)      |
+| `METL-L-2M-3D-GRB2`      | `X7w83g6S` | GRB2    | 2M     | 3D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-3D-GRB2-X7w83g6S.pt?download=1)      |
+| `METL-L-2M-1D-Pab1`      | `UKebCQGz` | Pab1    | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-1D-Pab1-UKebCQGz.pt?download=1)      |
+| `METL-L-2M-3D-Pab1`      | `2rr8V4th` | Pab1    | 2M     | 3D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-3D-Pab1-2rr8V4th.pt?download=1)      |
+| `METL-L-2M-1D-PTEN`      |  `CEMSx7ZC`   | PTEN    | 2M     | 1D  | Rosetta energies | METL-L           | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-1D-PTEN-CEMSx7ZC.pt?download=1)      | 
+| `METL-L-2M-3D-PTEN`      |  `PjxR5LW7`    | PTEN    | 2M     | 3D  | Rosetta energies | METL-L           | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-3D-PTEN-PjxR5LW7.pt?download=1)      | 
+| `METL-L-2M-1D-TEM-1`     | `PREhfC22` | TEM-1   | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-1D-TEM-1-PREhfC22.pt?download=1)     |
+| `METL-L-2M-3D-TEM-1`     | `9ASvszux` | TEM-1   | 2M     | 3D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-3D-TEM-1-9ASvszux.pt?download=1)     |
+| `METL-L-2M-1D-Ube4b`     | `HscFFkAb` | Ube4b   | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-1D-Ube4b-HscFFkAb.pt?download=1)     |
+| `METL-L-2M-3D-Ube4b`     | `H48oiNZN` | Ube4b   | 2M     | 3D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-3D-Ube4b-H48oiNZN.pt?download=1)     |
 
 
 
@@ -134,8 +136,8 @@ We pretrained a standard METL-Local model and a modified METL-Bind model, which 
 
 | Identifier                     | UUID       | Protein | Params | RPE | Output                              | Description                                                                                                                                                                       | Download     |
 |--------------------------------|------------|---------|--------|-----|-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| `METL-BIND-2M-3D-GB1-STANDARD` | `K6mw24Rg` | GB1     | 2M     | 3D  | Standard Rosetta energies           | Trained for the function-specific synthetic data experiment, but only trained on the standard energy terms, to use as a baseline. Should perform similarly to `METL-L-2M-3D-GB1`. | [Download](https://zenodo.org/records/11051645/files/METL-BIND-2M-3D-GB1-STANDARD-K6mw24Rg.pt?download=1) |
-| `METL-BIND-2M-3D-GB1-BINDING`  | `Bo5wn2SG` | GB1     | 2M     | 3D  | Standard + binding Rosetta energies | Trained on both the standard energy terms and the binding-specific energy terms.                                                                                                  | [Download](https://zenodo.org/records/11051645/files/METL-BIND-2M-3D-GB1-BINDING-Bo5wn2SG.pt?download=1) |
+| `METL-BIND-2M-3D-GB1-STANDARD` | `K6mw24Rg` | GB1     | 2M     | 3D  | Standard Rosetta energies           | Trained for the function-specific synthetic data experiment, but only trained on the standard energy terms, to use as a baseline. Should perform similarly to `METL-L-2M-3D-GB1`. | [Download](https://zenodo.org/records/14908509/files/METL-BIND-2M-3D-GB1-STANDARD-K6mw24Rg.pt?download=1) |
+| `METL-BIND-2M-3D-GB1-BINDING`  | `Bo5wn2SG` | GB1     | 2M     | 3D  | Standard + binding Rosetta energies | Trained on both the standard energy terms and the binding-specific energy terms.                                                                                                  | [Download](https://zenodo.org/records/14908509/files/METL-BIND-2M-3D-GB1-BINDING-Bo5wn2SG.pt?download=1) |
 
 
 `METL-BIND-2M-3D-GB1-BINDING` predicts the standard energy terms listed above as well as the following binding energy terms (in order):
@@ -171,8 +173,8 @@ Target models are fine-tuned source models that predict functional scores from e
 
 | DMS Dataset | Identifier | UUID       | RPE | Output           | Description                                                                                                                                                        | Download                                                                            |
 |:------------|------------|------------|-----|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| avGFP       | `None`     | `YoQkzoLD` | 1D  | Functional score | The `METL-L-2M-1D-GFP` model, fine-tuned on 64 examples from the avGFP DMS dataset. This model was used for the GFP design experiment described in the manuscript. | [Download](https://zenodo.org/records/11051645/files/FT-METL-L-2M-1D-GFP-YoQkzoLD.pt?download=1) |
-| avGFP       | `None`     | `PEkeRuxb` | 3D  | Functional score | The `METL-L-2M-3D-GFP` model, fine-tuned on 64 examples from the avGFP DMS dataset. This model was used for the GFP design experiment described in the manuscript. | [Download](https://zenodo.org/records/11051645/files/FT-METL-L-2M-3D-GFP-PEkeRuxb.pt?download=1) |
+| avGFP       | `None`     | `YoQkzoLD` | 1D  | Functional score | The `METL-L-2M-1D-GFP` model, fine-tuned on 64 examples from the avGFP DMS dataset. This model was used for the GFP design experiment described in the manuscript. | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-2M-1D-GFP-YoQkzoLD.pt?download=1) |
+| avGFP       | `None`     | `PEkeRuxb` | 3D  | Functional score | The `METL-L-2M-3D-GFP` model, fine-tuned on 64 examples from the avGFP DMS dataset. This model was used for the GFP design experiment described in the manuscript. | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-2M-3D-GFP-PEkeRuxb.pt?download=1) |
 
 
 # 3D Relative Position Embeddings
