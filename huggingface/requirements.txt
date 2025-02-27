@@ -1,5 +1,5 @@
 huggingface-hub==0.23.4
-transformers==4.42.4
+transformers==4.48.0
 numpy>=1.23.2
 networkx>=2.6.3
 scipy>=1.9.1
