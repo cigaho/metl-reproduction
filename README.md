@@ -42,23 +42,23 @@ Source models predict Rosetta energy terms.
 ### Local source models
 
 | Identifier               | UUID       | Protein | Params | RPE | Output           | Description | Download                                                                                            |
-|--------------------------|------------|---------|--------|-----|------------------|-------------|-----------------------------------------------------------------------------------------------------|
-| `METL-L-2M-1D-GFP`       | `8gMPQJy4` | avGFP   | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-1D-GFP-8gMPQJy4.pt?download=1)       |
-| `METL-L-2M-3D-GFP`       | `Hr4GNHws` | avGFP   | 2M     | 3D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-3D-GFP-Hr4GNHws.pt?download=1)       |
-| `METL-L-2M-1D-DLG4_2022` | `8iFoiYw2` | DLG4    | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-1D-DLG4_2022-8iFoiYw2.pt?download=1) |
-| `METL-L-2M-3D-DLG4_2022` | `kt5DdWTa` | DLG4    | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-3D-DLG4_2022-kt5DdWTa.pt?download=1) |
-| `METL-L-2M-1D-GB1`       | `DMfkjVzT` | GB1     | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-1D-GB1-DMfkjVzT.pt?download=1)       |
-| `METL-L-2M-3D-GB1`       | `epegcFiH` | GB1     | 2M     | 3D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-3D-GB1-epegcFiH.pt?download=1)       |
-| `METL-L-2M-1D-GRB2`      | `kS3rUS7h` | GRB2    | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-1D-GRB2-kS3rUS7h.pt?download=1)      |
-| `METL-L-2M-3D-GRB2`      | `X7w83g6S` | GRB2    | 2M     | 3D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-3D-GRB2-X7w83g6S.pt?download=1)      |
-| `METL-L-2M-1D-Pab1`      | `UKebCQGz` | Pab1    | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-1D-Pab1-UKebCQGz.pt?download=1)      |
-| `METL-L-2M-3D-Pab1`      | `2rr8V4th` | Pab1    | 2M     | 3D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-3D-Pab1-2rr8V4th.pt?download=1)      |
-| `METL-L-2M-1D-PTEN`      |  `CEMSx7ZC`   | PTEN    | 2M     | 1D  | Rosetta energies | METL-L           | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-1D-PTEN-CEMSx7ZC.pt?download=1)      | 
-| `METL-L-2M-3D-PTEN`      |  `PjxR5LW7`    | PTEN    | 2M     | 3D  | Rosetta energies | METL-L           | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-3D-PTEN-PjxR5LW7.pt?download=1)      | 
-| `METL-L-2M-1D-TEM-1`     | `PREhfC22` | TEM-1   | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-1D-TEM-1-PREhfC22.pt?download=1)     |
-| `METL-L-2M-3D-TEM-1`     | `9ASvszux` | TEM-1   | 2M     | 3D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-3D-TEM-1-9ASvszux.pt?download=1)     |
-| `METL-L-2M-1D-Ube4b`     | `HscFFkAb` | Ube4b   | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-1D-Ube4b-HscFFkAb.pt?download=1)     |
-| `METL-L-2M-3D-Ube4b`     | `H48oiNZN` | Ube4b   | 2M     | 3D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-3D-Ube4b-H48oiNZN.pt?download=1)     |
+|--------------------------|------------|-----|--------|-----|------------------|-------------|-----------------------------------------------------------------------------------------------------|
+| `METL-L-2M-1D-GFP`       | `8gMPQJy4` | GFP | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-1D-GFP-8gMPQJy4.pt?download=1)       |
+| `METL-L-2M-3D-GFP`       | `Hr4GNHws` | GFP | 2M     | 3D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-3D-GFP-Hr4GNHws.pt?download=1)       |
+| `METL-L-2M-1D-DLG4_2022` | `8iFoiYw2` | DLG4 | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-1D-DLG4_2022-8iFoiYw2.pt?download=1) |
+| `METL-L-2M-3D-DLG4_2022` | `kt5DdWTa` | DLG4 | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-3D-DLG4_2022-kt5DdWTa.pt?download=1) |
+| `METL-L-2M-1D-GB1`       | `DMfkjVzT` | GB1 | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-1D-GB1-DMfkjVzT.pt?download=1)       |
+| `METL-L-2M-3D-GB1`       | `epegcFiH` | GB1 | 2M     | 3D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-3D-GB1-epegcFiH.pt?download=1)       |
+| `METL-L-2M-1D-GRB2`      | `kS3rUS7h` | GRB2 | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-1D-GRB2-kS3rUS7h.pt?download=1)      |
+| `METL-L-2M-3D-GRB2`      | `X7w83g6S` | GRB2 | 2M     | 3D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-3D-GRB2-X7w83g6S.pt?download=1)      |
+| `METL-L-2M-1D-Pab1`      | `UKebCQGz` | Pab1 | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-1D-Pab1-UKebCQGz.pt?download=1)      |
+| `METL-L-2M-3D-Pab1`      | `2rr8V4th` | Pab1 | 2M     | 3D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-3D-Pab1-2rr8V4th.pt?download=1)      |
+| `METL-L-2M-1D-PTEN`      |  `CEMSx7ZC`   | PTEN | 2M     | 1D  | Rosetta energies | METL-L           | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-1D-PTEN-CEMSx7ZC.pt?download=1)      | 
+| `METL-L-2M-3D-PTEN`      |  `PjxR5LW7`    | PTEN | 2M     | 3D  | Rosetta energies | METL-L           | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-3D-PTEN-PjxR5LW7.pt?download=1)      | 
+| `METL-L-2M-1D-TEM-1`     | `PREhfC22` | TEM-1 | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-1D-TEM-1-PREhfC22.pt?download=1)     |
+| `METL-L-2M-3D-TEM-1`     | `9ASvszux` | TEM-1 | 2M     | 3D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-3D-TEM-1-9ASvszux.pt?download=1)     |
+| `METL-L-2M-1D-Ube4b`     | `HscFFkAb` | Ube4b | 2M     | 1D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-1D-Ube4b-HscFFkAb.pt?download=1)     |
+| `METL-L-2M-3D-Ube4b`     | `H48oiNZN` | Ube4b | 2M     | 3D  | Rosetta energies | METL-L      | [Download](https://zenodo.org/records/14908509/files/METL-L-2M-3D-Ube4b-H48oiNZN.pt?download=1)     |
 
 
 
@@ -171,10 +171,71 @@ side2_score
 ## Target models
 Target models are fine-tuned source models that predict functional scores from experimental sequence-function data.
 
-| DMS Dataset | Identifier | UUID       | RPE | Output           | Description                                                                                                                                                        | Download                                                                            |
-|:------------|------------|------------|-----|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| avGFP       | `None`     | `YoQkzoLD` | 1D  | Functional score | The `METL-L-2M-1D-GFP` model, fine-tuned on 64 examples from the avGFP DMS dataset. This model was used for the GFP design experiment described in the manuscript. | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-2M-1D-GFP-YoQkzoLD.pt?download=1) |
-| avGFP       | `None`     | `PEkeRuxb` | 3D  | Functional score | The `METL-L-2M-3D-GFP` model, fine-tuned on 64 examples from the avGFP DMS dataset. This model was used for the GFP design experiment described in the manuscript. | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-2M-3D-GFP-PEkeRuxb.pt?download=1) |
+### Global target models
+
+These models were trained using 80% of the experimental sequence-function data as training data. 
+
+| DMS Dataset    | Identifier | UUID        | RPE | Output           | Description                                         | Download                                                                                                          |
+|----------------|------------|-------------|-----|------------------|-----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| GFP            | `None`     | `PeT2D92j`  | 1D  | Functional score | METL-Global finetuned on the GFP dataset            | [Download](https://zenodo.org/records/14908509/files/FT-METL-G-20M-1D-GFP-PeT2D92j.pt?download=1)                 |
+| GFP            | `None`     | `6JBzHpkQ`  | 3D  | Functional score | METL-Global finetuned on the GFP dataset            | [Download](https://zenodo.org/records/14908509/files/FT-METL-G-20M-3D-GFP-6JBzHpkQ.pt?download=1)                 |
+| DLG4-Abundance | `None`     | `4Rh3WCbG`  | 1D  | Functional score | METL-Global finetuned on the DLG4-Abundance dataset | [Download](https://zenodo.org/records/14908509/files/FT-METL-G-20M-1D-DLG4_2022-ABUNDANCE-4Rh3WCbG.pt?download=1) |
+| DLG4-Abundance | `None`     | `RBtqxzvu`  | 3D  | Functional score | METL-Global finetuned on the DLG4-Abundance dataset | [Download](https://zenodo.org/records/14908509/files/FT-METL-G-20M-3D-DLG4_2022-ABUNDANCE-RBtqxzvu.pt?download=1) |
+| DLG4-Binding   | `None`     | `4xbuC5y7`  | 1D  | Functional score | METL-Global finetuned on the DLG4-Binding dataset   | [Download](https://zenodo.org/records/14908509/files/FT-METL-G-20M-1D-DLG4_2022-BINDING-4xbuC5y7.pt?download=1)   |
+| DLG4-Binding   | `None`     | `BuvxgE2x`  | 3D  | Functional score | METL-Global finetuned on the DLG4-Binding dataset   | [Download](https://zenodo.org/records/14908509/files/FT-METL-G-20M-3D-DLG4_2022-BINDING-BuvxgE2x.pt?download=1)   |
+| GB1            | `None`     | `dAndZfJ4`  | 1D  | Functional score | METL-Global finetuned on the GB1 dataset            | [Download](https://zenodo.org/records/14908509/files/FT-METL-G-20M-1D-GB1-dAndZfJ4.pt?download=1)                 |
+| GB1            | `None`     | `9vSB3DRM`  | 3D  | Functional score | METL-Global finetuned on the GB1 dataset            | [Download](https://zenodo.org/records/14908509/files/FT-METL-G-20M-3D-GB1-9vSB3DRM.pt?download=1)                 |
+| GRB2-Abundance | `None`     | `HenDpDWe`  | 1D  | Functional score | METL-Global finetuned on the GRB2-Abundance dataset | [Download](https://zenodo.org/records/14908509/files/FT-METL-G-20M-1D-GRB2-ABUNDANCE-HenDpDWe.pt?download=1)      |
+| GRB2-Abundance | `None`     | `dDoCCvfr`  | 3D  | Functional score | METL-Global finetuned on the GRB2-Abundance dataset | [Download](https://zenodo.org/records/14908509/files/FT-METL-G-20M-3D-GRB2-ABUNDANCE-dDoCCvfr.pt?download=1)      |
+| GRB2-Binding   | `None`     | `cvnycE5Q`  | 1D  | Functional score | METL-Global finetuned on the GRB2-Binding dataset   | [Download](https://zenodo.org/records/14908509/files/FT-METL-G-20M-1D-GRB2-BINDING-cvnycE5Q.pt?download=1)        |
+| GRB2-Binding   | `None`     | `jYesS9Ki`  | 3D  | Functional score | METL-Global finetuned on the GRB2-Binding dataset   | [Download](https://zenodo.org/records/14908509/files/FT-METL-G-20M-3D-GRB2-BINDING-jYesS9Ki.pt?download=1)        |
+| Pab1           | `None`     | ` ho54gxzv` | 1D  | Functional score | METL-Global finetuned on the Pab1 dataset           | [Download](https://zenodo.org/records/14908509/files/FT-METL-G-20M-1D-Pab1-ho54gxzv.pt?download=1)                |
+| Pab1           | `None`     | `jhbL2FeB`  | 3D  | Functional score | METL-Global finetuned on the Pab1 dataset           | [Download](https://zenodo.org/records/14908509/files/FT-METL-G-20M-3D-Pab1-jhbL2FeB.pt?download=1)                |
+| PTEN-Abundance | `None`     | `UEuMtmfx`  | 1D  | Functional score | METL-Global finetuned on the PTEN-Abundance dataset | [Download](https://zenodo.org/records/14908509/files/FT-METL-G-20M-1D-PTEN-ABUNDANCE-UEuMtmfx.pt?download=1)      |
+| PTEN-Abundance | `None`     | `eJPPQYEW`  | 3D  | Functional score | METL-Global finetuned on the PTEN-Abundance dataset | [Download](https://zenodo.org/records/14908509/files/FT-METL-G-20M-3D-PTEN-ABUNDANCE-eJPPQYEW.pt?download=1)      |
+| PTEN-Activity  | `None`     | `U3X8mSeT`  | 1D  | Functional score | METL-Global finetuned on the PTEN-Activity dataset  | [Download](https://zenodo.org/records/14908509/files/FT-METL-G-20M-1D-PTEN-ACTIVITY-U3X8mSeT.pt?download=1)       |
+| PTEN-Activity  | `None`     | `4gqYnW6V`  | 3D  | Functional score | METL-Global finetuned on the PTEN-Activity dataset  | [Download](https://zenodo.org/records/14908509/files/FT-METL-G-20M-3D-PTEN-ACTIVITY-4gqYnW6V.pt?download=1)       |
+| TEM-1          | `None`     | `ELL4GGQq`  | 1D  | Functional score | METL-Global finetuned on the TEM-1 dataset          | [Download](https://zenodo.org/records/14908509/files/FT-METL-G-20M-1D-TEM-1-ELL4GGQq.pt?download=1)               |
+| TEM-1          | `None`     | `K6BjsWXm`  | 3D  | Functional score | METL-Global finetuned on the TEM-1 dataset          | [Download](https://zenodo.org/records/14908509/files/FT-METL-G-20M-3D-TEM-1-K6BjsWXm.pt?download=1)               |
+| Ube4b          | `None`     | `BAWw23vW`  | 1D  | Functional score | METL-Global finetuned on the Ube4b dataset          | [Download](https://zenodo.org/records/14908509/files/FT-METL-G-20M-1D-Ube4b-BAWw23vW.pt?download=1)               |
+| Ube4b          | `None`     | `G9piq6WH`  | 3D  | Functional score | METL-Global finetuned on the Ube4b dataset          | [Download](https://zenodo.org/records/14908509/files/FT-METL-G-20M-3D-Ube4b-G9piq6WH.pt?download=1)               |
+
+### Local target models
+
+These models were trained using 80% of the experimental sequence-function data as training data. 
+
+| DMS Dataset    | Identifier | UUID     | RPE | Output           | Description                                        | Download                                                                                                      |
+|----------------|------------|----------|-----|------------------|----------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| GFP            | `None`     | `HaUuRwfE` | 1D  | Functional score | METL-Local finetuned on the GFP dataset            | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-1D-GFP-HaUuRwfE.pt?download=1)                 |
+| GFP            | `None`     | `LWEY95Yb` | 3D  | Functional score | METL-Local finetuned on the GFP dataset            | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-3D-GFP-LWEY95Yb.pt?download=1)                 |
+| DLG4-Abundance | `None`     | `RMFA6dnX` | 1D  | Functional score | METL-Local finetuned on the DLG4-Abundance dataset | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-1D-DLG4_2022-ABUNDANCE-RMFA6dnX.pt?download=1) |
+| DLG4-Abundance | `None`     | `V3uTtXVe` | 3D  | Functional score | METL-Local finetuned on the DLG4-Abundance dataset | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-3D-DLG4_2022-ABUNDANCE-V3uTtXVe.pt?download=1) |
+| DLG4-Binding   | `None`     | `YdzBYWHs` | 1D  | Functional score | METL-Local finetuned on the DLG4-Binding dataset   | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-1D-DLG4_2022-BINDING-YdzBYWHs.pt?download=1)   |
+| DLG4-Binding   | `None`     | `iu6ZahPw` | 3D  | Functional score | METL-Local finetuned on the DLG4-Binding dataset   | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-3D-DLG4_2022-BINDING-iu6ZahPw.pt?download=1)   |
+| GB1            | `None`     | `Pgcseywk` | 1D  | Functional score | METL-Local finetuned on the GB1 dataset            | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-1D-GB1-Pgcseywk.pt?download=1)                 |
+| GB1            | `None`     | `UvMMdsq4` | 3D  | Functional score | METL-Local finetuned on the GB1 dataset            | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-3D-GB1-UvMMdsq4.pt?download=1)                 |
+| GRB2-Abundance | `None`     | `VNpi9Zjt` | 1D  | Functional score | METL-Local finetuned on the GRB2-Abundance dataset | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-1D-GRB2-ABUNDANCE-VNpi9Zjt.pt?download=1)      |
+| GRB2-Abundance | `None`     | `PqBMjXkA` | 3D  | Functional score | METL-Local finetuned on the GRB2-Abundance dataset | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-3D-GRB2-ABUNDANCE-PqBMjXkA.pt?download=1)      |
+| GRB2-Binding   | `None`     | `Z59BhUaE` | 1D  | Functional score | METL-Local finetuned on the GRB2-Binding dataset   | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-1D-GRB2-BINDING-Z59BhUaE.pt?download=1)        |
+| GRB2-Binding   | `None`     | `VwcRN6UB` | 3D  | Functional score | METL-Local finetuned on the GRB2-Binding dataset   | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-3D-GRB2-BINDING-VwcRN6UB.pt?download=1)        |
+| Pab1           | `None`     | `TdjCzoQQ` | 1D  | Functional score | METL-Local finetuned on the Pab1 dataset           | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-1D-Pab1-TdjCzoQQ.pt?download=1)                |
+| Pab1           | `None`     | `5SjoLx3y` | 3D  | Functional score | METL-Local finetuned on the Pab1 dataset           | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-3D-Pab1-5SjoLx3y.pt?download=1)                |
+| PTEN-Abundance | `None`     | `oUScGeHo` | 1D  | Functional score | METL-Local finetuned on the PTEN-Abundance dataset | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-2M-1D-PTEN-ABUNDANCE-oUScGeHo.pt?download=1)   |
+| PTEN-Abundance | `None`     | `DhuasDEr` | 3D  | Functional score | METL-Local finetuned on the PTEN-Abundance dataset | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-2M-3D-PTEN-ABUNDANCE-DhuasDEr.pt?download=1)   |
+| PTEN-Activity  | `None`     | `m9UsG7dq` | 1D  | Functional score | METL-Local finetuned on the PTEN-Activity dataset  | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-2M-1D-PTEN-ACTIVITY-m9UsG7dq.pt?download=1)    |
+| PTEN-Activity  | `None`     | `8Vi7ENcC` | 3D  | Functional score | METL-Local finetuned on the PTEN-Activity dataset  | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-2M-3D-PTEN-ACTIVITY-8Vi7ENcC.pt?download=1)    |
+| TEM-1          | `None`     | `64ncFxBR` | 1D  | Functional score | METL-Local finetuned on the TEM-1 dataset          | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-1D-TEM-1-64ncFxBR.pt?download=1)               |
+| TEM-1          | `None`     | `PncvgiJU` | 3D  | Functional score | METL-Local finetuned on the TEM-1 dataset          | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-3D-TEM-1-PncvgiJU.pt?download=1)               |
+| Ube4b          | `None`     | `e9uhhnAv` | 1D  | Functional score | METL-Local finetuned on the Ube4b dataset          | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-1D-Ube4b-e9uhhnAv.pt?download=1)               |
+| Ube4b          | `None`     | `NfbZL7jK` | 3D  | Functional score | METL-Local finetuned on the Ube4b dataset          | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-3D-Ube4b-NfbZL7jK.pt?download=1)               |
+
+
+### GFP design experiment target models
+
+| DMS Dataset | Identifier | UUID       | RPE | Output           | Description                                                                                                                                                      | Download                                                                            |
+|:------------|------------|------------|-----|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| GFP         | `None`     | `YoQkzoLD` | 1D  | Functional score | The `METL-L-2M-1D-GFP` model, fine-tuned on 64 examples from the GFP DMS dataset. This model was used for the GFP design experiment described in the manuscript. | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-2M-1D-GFP-YoQkzoLD.pt?download=1) |
+| GFP         | `None`     | `PEkeRuxb` | 3D  | Functional score | The `METL-L-2M-3D-GFP` model, fine-tuned on 64 examples from the GFP DMS dataset. This model was used for the GFP design experiment described in the manuscript. | [Download](https://zenodo.org/records/14908509/files/FT-METL-L-2M-3D-GFP-PEkeRuxb.pt?download=1) |
 
 
 # 3D Relative Position Embeddings
@@ -187,6 +248,22 @@ When using 3D RPEs, the model requires a protein structure in the form of a PDB 
 
 Our testing showed that 3D RPEs improve performance for METL-Global models but do not make a difference for METL-Local models.
 We provide both 1D and 3D models in this repository. The 1D models do not require the PDB structure as an additional input.
+
+The [pdbs](pdbs) directory contains PDB files corresponding to the experimental datasets we evaluated. These can be used with the 3D RPE models listed above.
+
+| DMS Dataset    | PDB File                                                                    |
+|----------------|-----------------------------------------------------------------------------|
+| GFP            | [`1gfl_cm.pdb`](pdbs/1gfl_cm.pdb)                                             |
+| DLG4-Abundance | [`6qji_p_trunc_2022.pdb`](pdbs/6qji_p_trunc_2022.pdb)                         |
+| DLG4-Binding   | [`6qji_p_trunc_2022.pdb`](pdbs/6qji_p_trunc_2022.pdb)                         |
+| GB1            | [`2qmt_p.pdb`](pdbs/2qmt_p.pdb)                                               |
+| GRB2-Abundance | [`AF-P62993-F1-model_v4_trunc_p.pdb`](pdbs/AF-P62993-F1-model_v4_trunc_p.pdb) |
+| GRB2-Binding   | [`AF-P62993-F1-model_v4_trunc_p.pdb`](pdbs/AF-P62993-F1-model_v4_trunc_p.pdb) |
+| Pab1           | [`pab1_cm.pdb`](pdbs/pab1_cm.pdb)                                             |
+| PTEN-Abundance | [`AF-P60484-F1-model_v4_p.pdb`](pdbs/AF-P60484-F1-model_v4_p.pdb)             |
+| PTEN-Activity  | [`AF-P60484-F1-model_v4_p.pdb`](pdbs/AF-P60484-F1-model_v4_p.pdb)             |
+| TEM-1          | [`AF-Q6SJ61-F1-model_v4_p.pdb`](pdbs/AF-Q6SJ61-F1-model_v4_p.pdb)             |
+| Ube4b          | [`ube4b_cm.pdb`](pdbs/ube4b_cm.pdb)                                           |
 
 # Examples
 
