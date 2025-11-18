@@ -419,7 +419,7 @@ train_sizes = np.array([10, 20, 40, 80, 160, 320, 640,
 def c(vals):
     return np.array(vals, dtype=float)
 
-# ===================== TEM-1 example showing position of sample size =====================
+# TEM-1 example showing position of sample size 
 
 tem1_l = c([
     0.186,  # 10
@@ -449,7 +449,7 @@ tem1_g = c([
     0.79,  # 10240
 ])
 
-# ===================== Other proteins: same idea =====================
+# Other proteins: same idea, data extract from training
 
 # GFP 
 gfp_g = c([0.10, 0.16, 0.25, 0.38, 0.50, 0.60, 0.68, 0.75, 0.80, 0.83, 0.85])
