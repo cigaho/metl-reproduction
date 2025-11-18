@@ -1,5 +1,7 @@
 # Methods to reproduced figure2:
-"""
+
+-note the paper compare different models with METL, we only write the code for the METL, as all those other model are other papers' result.
+
 METL-Local TEM-1 learning curve (Figure 2-style)
 
 Implements the METL target model training protocol described in:
@@ -10,7 +12,7 @@ Implements the METL target model training protocol described in:
 - Target model dataset splits
 
 This script reproduces the METL-Local curve for TEM-1 only.
-"""
+
 
 import os
 from typing import Dict, List, Tuple
