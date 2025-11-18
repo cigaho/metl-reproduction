@@ -1,4 +1,4 @@
-# Methods to reproduce figure3
+# Methods to reproduce figure3a
 
 -this code uses TEM-1 as an exmaple and prints out the 9 spearman and the median spearman which will be used to plot the graph with other protein
 
@@ -310,3 +310,112 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+
+import numpy as np
+import matplotlib.pyplot as plt
+from collections import OrderedDict
+
+data = OrderedDict({
+    "GFP":   {"METL-G": [0.61,0.63,0.60,0.62,0.61,0.64,0.60,0.62,0.63],
+              "METL-L": [0.62,0.64,0.63,0.62,0.64,0.63,0.65,0.64,0.63]},
+    "DLG4-A":{"METL-G": [0.59,0.53,0.57,0.55,0.54,0.56,0.55,0.54,0.57],
+              "METL-L": [0.58,0.60,0.62,0.61,0.60,0.61,0.62,0.60,0.59]},
+    "DLG4-B":{"METL-G": [0.68,0.70,0.72,0.71,0.70,0.69,0.70,0.71,0.72],
+              "METL-L": [0.72,0.73,0.75,0.74,0.74,0.75,0.73,0.74,0.75]},
+    "GB1":   {"METL-G": [0.86,0.87,0.90,0.88,0.87,0.88,0.89,0.89,0.87],
+              "METL-L": [0.90,0.91,0.92,0.93,0.92,0.92,0.91,0.92,0.92]},
+    "GRB2-A":{"METL-G": [0.60,0.61,0.60,0.59,0.60,0.61,0.60,0.61,0.60],
+              "METL-L": [0.64,0.65,0.64,0.66,0.65,0.65,0.64,0.66,0.65]},
+    "GRB2-B":{"METL-G": [0.70,0.72,0.73,0.73,0.72,0.71,0.72,0.72,0.73],
+              "METL-L": [0.76,0.77,0.76,0.75,0.76,0.77,0.76,0.76,0.77]},
+    "Pab1":  {"METL-G": [0.56,0.57,0.58,0.58,0.57,0.56,0.57,0.58,0.57],
+              "METL-L": [0.69,0.70,0.71,0.72,0.70,0.61,0.62,0.60,0.61]}, 
+    "PTEN-A":{"METL-G": [0.62,0.63,0.62,0.61,0.62,0.63,0.62,0.61,0.62],
+              "METL-L": [0.66,0.66,0.67,0.66,0.65,0.66,0.66,0.66,0.67]},
+    "PTEN-E":{"METL-G": [0.41,0.42,0.43,0.43,0.41,0.42,0.42,0.41,0.42],
+              "METL-L": [0.45,0.46,0.47,0.46,0.45,0.46,0.45,0.46,0.47]},
+    "TEM-1": {"METL-G": [0.68,0.69,0.70,0.69,0.68,0.69,0.68,0.69,0.70],
+              "METL-L": [0.72,0.73,0.74,0.73,0.72,0.73,0.72,0.73,0.74]},
+    "Ube4b": {"METL-G": [0.38,0.31,0.39,0.40,0.46,0.45,0.37,0.39,0.48],
+              "METL-L": [0.38,0.40,0.49,0.42,0.40,0.29,0.41,0.48,0.41]},
+})
+
+def mean_and_err(vals, kind="ci95"):
+    x = np.asarray(vals, float)
+    mu = float(np.mean(x))
+    sd = float(np.std(x, ddof=1)) if x.size > 1 else 0.0
+    n  = x.size
+    if kind == "sd":
+        err = sd
+    elif kind == "sem":
+        err = sd / math.sqrt(n) if n > 0 else 0.0
+    elif kind == "ci95":
+        # 95% CI using t_{0.975, n-1}
+        if n <= 1 or sd == 0.0:
+            err = 0.0
+        else:
+            # t critical for df = n-1 (hardcode small n=9 table to avoid SciPy as version compatiable on my pc is not for other, we need multiple pc to run this)
+            T95 = {1:12.706,2:4.303,3:3.182,4:2.776,5:2.571,6:2.447,7:2.365,8:2.306,9:2.262,
+                   10:2.228,11:2.201,12:2.179,13:2.160,14:2.145,15:2.131}.get(n-1, 1.96)
+            err = (sd / math.sqrt(n)) * T95
+    else:
+        raise ValueError("ERR_KIND must be 'sd', 'sem', or 'ci95'")
+    return mu, err
+
+models = ["METL-G", "METL-L"]
+colors = {"METL-G": "#6b4cff", "METL-L": "#ff8a2b"}
+
+# Compute per-protein stats
+proteins = list(data.keys())
+stats = {m: {"mu": [], "err": []} for m in models}
+for p in proteins:
+    for m in models:
+        mu, err = mean_and_err(data[p][m], ERR_KIND)
+        stats[m]["mu"].append(mu)
+        stats[m]["err"].append(err)
+
+# Build the 'Average' point (mean across proteins of the per-protein means)
+avg_mu = {}
+avg_err = {}
+for m in models:
+    mus = np.array(stats[m]["mu"], float)
+    # 95% CI across proteins (t with df = P-1)
+    mu_bar = float(np.mean(mus))
+    sd_bar = float(np.std(mus, ddof=1))
+    P = mus.size
+    if ERR_KIND == "sd":
+        err_bar = sd_bar
+    elif ERR_KIND == "sem":
+        err_bar = sd_bar / math.sqrt(P)
+    else:  # ci95
+        T95P = {1:12.706,2:4.303,3:3.182,4:2.776,5:2.571,6:2.447,7:2.365,8:2.306,9:2.262,
+                10:2.228,11:2.201,12:2.179,13:2.160,14:2.145,15:2.131}.get(P-1, 1.96)
+        err_bar = (sd_bar / math.sqrt(P)) if P>1 else 0.0
+        err_bar *= T95P if P>1 else 0.0
+    avg_mu[m] = mu_bar
+    avg_err[m] = err_bar
+
+# Insert Average at the front for plotting
+x_labels = ["Average"] + proteins
+x = np.arange(len(x_labels))
+offset = 0.15
+
+plt.figure(figsize=(11, 4))
+for i, m in enumerate(models):
+    xs = x + (i - 0.5) * offset
+    ys = [avg_mu[m]] + stats[m]["mu"]
+    es = [avg_err[m]] + stats[m]["err"]
+    plt.errorbar(xs, ys, yerr=es, fmt='o', capsize=3, elinewidth=1.2,
+                 color=colors[m], label=m, markersize=6)
+
+plt.xticks(x, x_labels, rotation=20)
+plt.ylim(0.0, 1.0)
+plt.ylabel("Spearman")
+plt.xlabel("Model Name")
+plt.title("Fig. 3b - style position extrapolation: METL-Global vs METL-Local")
+plt.legend()
+plt.tight_layout()
+plt.show()
