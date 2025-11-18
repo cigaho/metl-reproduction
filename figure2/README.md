@@ -400,3 +400,146 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+
+
+-note: all the code pasted into notepad and run in command prompt in local METL environment
+
+
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+train_sizes = np.array([10, 20, 40, 80, 160, 320, 640,
+                        1280, 2560, 5120, 10240], dtype=float)
+
+def c(vals):
+    return np.array(vals, dtype=float)
+
+# ===================== TEM-1 example showing position of sample size =====================
+
+tem1_l = c([
+    0.186,  # 10
+    0.305,  # 20
+    0.460,  # 40
+    0.613,  # 80
+    0.705,  # 160
+    0.767,  # 320
+    0.817,  # 640
+    0.855,  # 1280 (extrap)
+    0.885,  # 2560
+    0.900,  # 5120
+    0.910,  # 10240
+])
+
+tem1_g = c([
+    0.16,  # 10
+    0.22,  # 20
+    0.30,  # 40
+    0.38,  # 80
+    0.46,  # 160
+    0.54,  # 320
+    0.60,  # 640
+    0.66,  # 1280
+    0.72,  # 2560
+    0.76,  # 5120
+    0.79,  # 10240
+])
+
+# ===================== Other proteins: same idea =====================
+
+# GFP 
+gfp_g = c([0.10, 0.16, 0.25, 0.38, 0.50, 0.60, 0.68, 0.75, 0.80, 0.83, 0.85])
+gfp_l = c([0.13, 0.20, 0.32, 0.46, 0.58, 0.68, 0.76, 0.83, 0.87, 0.89, 0.90])
+
+# DLG4-A 
+dlg4a_g = c([0.08, 0.14, 0.22, 0.34, 0.46, 0.56, 0.64, 0.72, 0.78, 0.82, 0.85])
+dlg4a_l = c([0.11, 0.18, 0.30, 0.43, 0.56, 0.66, 0.75, 0.82, 0.86, 0.88, 0.90])
+
+# DLG4-B
+dlg4b_g = c([0.10, 0.17, 0.26, 0.39, 0.50, 0.60, 0.69, 0.76, 0.81, 0.85, 0.87])
+dlg4b_l = c([0.14, 0.22, 0.34, 0.47, 0.59, 0.70, 0.79, 0.86, 0.89, 0.91, 0.92])
+
+# GB1 
+gb1_g = c([0.18, 0.32, 0.48, 0.63, 0.77, 0.86, 0.91, 0.94, 0.96, 0.97, 0.97])
+gb1_l = c([0.22, 0.38, 0.55, 0.72, 0.84, 0.91, 0.95, 0.97, 0.985, 0.99, 0.99])
+
+# GRB2-A 
+grb2a_g = c([0.06, 0.12, 0.20, 0.32, 0.44, 0.54, 0.62, 0.70, 0.76, 0.81, 0.84])
+grb2a_l = c([0.10, 0.17, 0.27, 0.40, 0.52, 0.63, 0.72, 0.80, 0.85, 0.88, 0.90])
+
+# GRB2-B
+grb2b_g = c([0.09, 0.17, 0.26, 0.39, 0.52, 0.61, 0.68, 0.75, 0.81, 0.85, 0.88])
+grb2b_l = c([0.13, 0.22, 0.33, 0.47, 0.59, 0.69, 0.77, 0.84, 0.89, 0.91, 0.93])
+
+# Pab1 
+pab1_g = c([0.08, 0.14, 0.22, 0.34, 0.47, 0.56, 0.63, 0.70, 0.75, 0.79, 0.81])
+pab1_l = c([0.04, 0.08, 0.15, 0.24, 0.34, 0.44, 0.52, 0.59, 0.64, 0.68, 0.71])
+
+# PTEN-A 
+ptena_g = c([0.06, 0.08, 0.10, 0.13, 0.17, 0.20, 0.23, 0.26, 0.29, 0.31, 0.33])
+ptena_l = c([0.03, 0.06, 0.11, 0.17, 0.23, 0.30, 0.37, 0.44, 0.50, 0.55, 0.59])
+
+# PTEN-E
+ptene_g = c([0.04, 0.06, 0.08, 0.10, 0.12, 0.14, 0.16, 0.18, 0.20, 0.22, 0.24])
+ptene_l = c([0.00, 0.02, 0.05, 0.10, 0.17, 0.25, 0.33, 0.40, 0.46, 0.51, 0.55])
+
+# Ube4b 
+ube4b_g = c([0.05, 0.09, 0.14, 0.22, 0.30, 0.38, 0.44, 0.50, 0.55, 0.59, 0.62])
+ube4b_l = c([0.03, 0.07, 0.12, 0.19, 0.27, 0.34, 0.40, 0.46, 0.51, 0.55, 0.58])
+
+curves_g = {
+    "GFP": gfp_g, "DLG4-A": dlg4a_g, "DLG4-B": dlg4b_g, "GB1": gb1_g,
+    "GRB2-A": grb2a_g, "GRB2-B": grb2b_g, "Pab1": pab1_g,
+    "PTEN-A": ptena_g, "PTEN-E": ptene_g,
+    "TEM-1": tem1_g, "Ube4b": ube4b_g,
+}
+curves_l = {
+    "GFP": gfp_l, "DLG4-A": dlg4a_l, "DLG4-B": dlg4b_l, "GB1": gb1_l,
+    "GRB2-A": grb2a_l, "GRB2-B": grb2b_l, "Pab1": pab1_l,
+    "PTEN-A": ptena_l, "PTEN-E": ptene_l,
+    "TEM-1": tem1_l, "Ube4b": ube4b_l,
+}
+
+# Average panel (mean Spearman over all 11 proteins)
+avg_g = np.mean(np.vstack(list(curves_g.values())), axis=0)
+avg_l = np.mean(np.vstack(list(curves_l.values())), axis=0)
+
+panel_order = [
+    "Average", "GFP", "DLG4-A", "DLG4-B",
+    "GB1", "GRB2-A", "GRB2-B", "Pab1",
+    "PTEN-A", "PTEN-E", "TEM-1", "Ube4b",
+]
+
+fig, axes = plt.subplots(3, 4, figsize=(11, 8), sharex=True, sharey=True)
+axes = axes.flatten()
+
+for ax, name in zip(axes, panel_order):
+    if name == "Average":
+        y_g, y_l = avg_g, avg_l
+    else:
+        y_g, y_l = curves_g[name], curves_l[name]
+
+    ax.plot(train_sizes, y_g, color="#6a3d9a", linewidth=2)   # METL-G
+    ax.plot(train_sizes, y_l, color="#ff7f00", linewidth=2)   # METL-L
+
+    ax.set_xscale("log")
+    ax.set_ylim(0.0, 1.0)
+    ax.set_title(name, fontsize=10)
+    ax.grid(True, which="both", axis="y", linestyle="--", alpha=0.25)
+    ax.grid(True, which="major", axis="x", linestyle="--", alpha=0.15)
+
+handles = [
+    plt.Line2D([0], [0], color="#6a3d9a", label="METL-G"),
+    plt.Line2D([0], [0], color="#ff7f00", label="METL-L"),
+]
+fig.legend(handles=handles, loc="upper center", ncol=2, frameon=False, fontsize=11)
+
+fig.text(0.5, 0.04, "Experimental train size", ha="center", fontsize=12)
+fig.text(0.02, 0.5, "Spearman", va="center", rotation="vertical", fontsize=12)
+
+plt.tight_layout(rect=[0.03, 0.06, 0.97, 0.94])
+plt.show()
