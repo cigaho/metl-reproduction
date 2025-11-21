@@ -301,7 +301,7 @@ def main():
 
  
     out_npz = os.path.join(ROOT, "fig5c_results_mutation_only.npz")
-    np.savez_compressed(out_npz, source_a=res_a, source_b=res_b)
+    np.savez_compressed(out_npz, source_a=res_a)
     print(f"\nSaved results to {out_npz}")
 
 if __name__ == "__main__":
