@@ -291,13 +291,9 @@ def main():
     # Run METL-L(GB1)
     res_l = run_one_source(UUID_METL_L_GB1, label="METL-L(GB1)")
 
-    # Run METL-Bind(GB1) if available
-    if UUID_METL_BIND_GB1 != "PUT_YOURS":
-        res_b = run_one_source(UUID_METL_BIND_GB1, label="METL-Bind(GB1)")
-
     # Save raw results
     out_npz = os.path.join(ROOT, "fig5b_results.npz")
-    np.savez_compressed(out_npz, metl_l=res_l, metl_bind=res_b)
+    np.savez_compressed(out_npz, metl_l=res_l)
     print(f"\nSaved results to {out_npz}")
 
 if __name__ == "__main__":
