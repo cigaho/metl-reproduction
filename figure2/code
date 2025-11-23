@@ -2,7 +2,7 @@
 
 -note the paper compare different models with METL, we only write the code for the METL, as all those other model are other papers' result.
 
-METL-Local TEM-1 learning curve (Figure 2-style)
+METL-Local TEM-1 learning curve 
 
 Implements the METL target model training protocol described in:
 'Biophysics-based protein language models for protein engineering'
@@ -11,7 +11,7 @@ Implements the METL target model training protocol described in:
 - METL target model training
 - Target model dataset splits
 
-This script reproduces the METL-Local curve for TEM-1 only.
+This script reproduces the METL-Local curve for TEM-1 only, just change model and dataset for other protein.
 
 
 import os
@@ -28,9 +28,9 @@ import matplotlib.pyplot as plt
 
 import metl
 
-# --------------------
-# Paths & config
-# --------------------
+
+#--------- Paths & config ---------
+
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
@@ -69,9 +69,9 @@ MAX_GRAD_NORM = 0.5
 
 GLOBAL_SEED = 1  # controls test split + sampling
 
-# --------------------
-# Utility functions
-# --------------------
+
+#--------- Utility functions ---------
+
 
 def set_seed(seed: int):
     np.random.seed(seed)
@@ -221,9 +221,9 @@ def evaluate_spearmanarman(model: MetlLocalTarget,
     rho, _ = spearmanr(preds, y_test)
     return float(rho)
 
-# --------------------
-# Main
-# --------------------
+
+#--------- Main ---------
+
 
 def main():
     set_seed(GLOBAL_SEED)
