@@ -13,9 +13,8 @@ from torch.utils.data import DataLoader, TensorDataset
 
 import metl
 
-# ============================
-# User config 
-# ============================
+
+# -----User config-----
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
@@ -32,9 +31,9 @@ PDB_PATH = os.path.join(ROOT, "metl-pub", "data", "pdb_files", "2GB1.pdb")
 UUID_A = "epegcFiH"      # METL-L-2M-3D pretrained on GB1 (Rosetta-only)
 UUID_B = None           
 
-# =========================
-# Global protocol settings
-# =========================
+
+# -----Global protocol settings-----
+
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 TRAIN_SIZES = [10, 20, 40, 80, 160, 320, 640,
@@ -54,9 +53,9 @@ WARMUP_FRAC = 0.01
 MAX_GRAD_NORM = 0.5
 GLOBAL_SEED = 1  # controls fixed test split + replicate sampling
 
-# =========================
-# Utilities
-# =========================
+
+# -----Utilities-----
+
 def _clean_seq(s: str) -> str:
     return s.replace(" ", "").replace("\n", "").replace("\r", "").strip()
 
