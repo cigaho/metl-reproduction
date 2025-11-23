@@ -1,3 +1,11 @@
+# Figure 6 - Validation of the METL pipeline
+
+# Explain figure 6
+
+This figure (Figure 6) presents a critical real-world validation of the METL pipeline by transitioning from in silico prediction to the actual design and experimental characterization of novel green fluorescent protein (GFP) variants. The central question it addresses is whether a model fine-tuned on an extremely limited experimental dataset (N=64) can successfully guide the design of functional proteins, a scenario that mirrors the practical constraints of protein engineering. The validation is structured as a controlled comparison. The left panel outlines the complete design workflow, which begins with pretraining a model on a vast corpus of simulated GFP variants to instill a biophysical prior. This model is then fine-tuned on the small set of real experimental measurements. Finally, the optimized model is used to design new protein sequences. The right panel directly contrasts the experimental outcomes of two distinct design strategies. The top chart (c) displays the measured relative brightness of sequences designed by METL. A significant number of these variants, particularly those based on "observed" mutation types, exhibit high fluorescence, demonstrating that the model successfully learned to extrapolate from minimal data to propose viable designs. In stark contrast, the bottom chart (d) shows the results from a set of randomly designed variants, which serve as a crucial negative control. The overwhelming majority of these random sequences show little to no fluorescence. This side-by-side comparison provides compelling evidence that the functional success of the METL-designed sequences is not a product of chance but is a direct result of the model's learned sequence-function relationships, thereby validating the practical utility of the biophysics-based prior in a genuine low-data design challenge.
+
+# Figure reproduction
+
 **Figure 6c — METL-designed variants brightness**
 
 **Goal:** evaluate the functional success of protein sequences designed by METL under extreme low-data conditions (N=64 experimental training examples).  
