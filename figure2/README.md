@@ -1,16 +1,18 @@
 # Figure 2 — METL performance over experiment data size**
 
-**Goal:** evaluate performance of METL against baseline methods in data-scarce protein engineering scenarios. Validating feasibility for adopting biophysics as prior in protein engineering
+**Goal of the figure:** evaluate performance of METL against baseline methods in data-scarce protein engineering scenarios. Validating feasibility for adopting biophysics as prior in protein engineering
 
 **How we did it:** we systematically varied training set sizes (from 8 to 16,384 samples) across 11 protein fitness datasets and measured test set performance using Spearman correlation. Methods included biophysics-based (METL-Global, METL-Local), evolutionary (ESM-2, EVE), and simple baselines (Linear, Rosetta). In our reproduction, we focus on the biophysics-based METL, which is purposed by the paper. Learning curves on log-log scales reveal how each method's inductive biases affect sample efficiency, with METL-Local excelling in extreme low-data regimes due to its protein-specific biophysical pretraining.
 
 ---
 
-**Key Findings:**
+# Explain this figure
 - **Protein-specific patterns:** different proteins show varying optimal method preferences, highlighting the context-dependent value of different prior knowledge types
 - **Sample efficiency:** METL frameworks maintain competitive performance within scarce dataset than general-purpose models when it comes to protein that is strongly related to biophysics features
 
-The reproduction confirms the original paper's conclusion that biophysical priors provide critical advantages for practical protein engineering where experimental data is severely limited.
+For exmaple, we can see that METL does very well on protein like GB1 and GFP. There are different reasons but the big picture is that the fitness definition algines with the prior. For GFP, it's fitness is defined by how bright it is which is directly related to how stable it is, and this is exactly what biophysic explains really well.  For GB1, it's fitness is defined on how well it bind to the Fc region of IgG antibodies, normally if multiple domain is involved like a binding domain, stablizing domain and catalytic domain, then our biophysics prior shouldn't do well because there are too much noise in our biophysic information, the biophysics attribute computted and learn are not just for binding but for catalysis and other things, but here GB1 is very small, it only have 56 amino acids, so the entire protein is solely for binding, so our biophysics labels can work in a rather noise free situation. But for Pab1, our model is not very good, because Pab1 is a RNA binding protein that contain 577 amino acids, which includes multiple domains. Evolutionary base prior is much better (although did not do well in low data as well) becuase RNA binding domains are very common so that prior is very useful. 
+
+For proteins like Ube4b, most model cannot do well in low data, becuase of it's fitness definition is complex. It is E3/E4 ubiquitin ligase have mulitple domain and is a large complex. The human UBE4B gene encodes a protein of 1,372 amino acids. It function in multiple steps: E1 (Activating Enzyme): Activates ubiquitin. E2 (Conjugating Enzyme): Carries the activated ubiquitin. E3 (Ligase Enzyme): Binds to a specific target protein and facilitates the transfer of ubiquitin from the E2 to the target. A lot of organism has this enzyme and this is very essential so a evolutionary prior can perform better, but due to the complexity, evolutionary prior alone doesn't help too much.
 
 -note the paper compare different models with METL, we only write the code for the METL, as all those other model are other papers' result.
 
