@@ -1,4 +1,6 @@
-# About Figure 5
+# Figure 5 - Function-specific training for METL-Bind pretraining for GB1 
+
+# Explain figure 5
 Fig. 5 asks whether adding task-specific, physics-based pretraining signals that reflect GB1’s real function (binding to IgG) can improve downstream GB1 mutation-effect prediction over a “vanilla” Rosetta-only METL pretrain. Concretely, the paper compares a standard local METL pretrain (“METL-L”) against a binding-aware pretrain (“METL-Bind”) that incorporates features computed on a GB1–IgG complex. The hypothesis is that if the backbone has “seen” binding-relevant geometry/energetics during pretraining, the small supervised heads trained on DMS will need fewer labeled examples and will generalize better. Only figure5b and figure5c are content for us to reproduce, the rest are for explainations.
 
 Fig. 5b is the learning-curve result on the GB1 dataset (x-axis: experimental train size; y-axis: Spearman on a fixed test split). The curve for METL-Bind sits consistently above METL-L, with the largest gains at low N, demonstrating better sample-efficiency when the backbone is pretrained on binding-aware signals rather than structure-only signals. This is the exact behavior our script targets: we instantiate the GB1 domain (B1, 56 aa) and evaluate Spearman across many replicate subsamples per N to trace the median and IQR, mirroring the figure.
