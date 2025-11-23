@@ -23,9 +23,9 @@ exp_sizes = np.array(
 row_idx = np.arange(len(exp_sizes))   # 0,1,...,11
 
 
-# 2. Spearman grid (rows follow exp_sizes order)
+# 2. Spearman grid (rows follow exp_sizes order, extracted from paper)
 
-Z = np.array([
+Z = np.array([ 
     [0.21, 0.25, 0.26, 0.31, 0.37, 0.40, 0.41, 0.41, 0.42, 0.44, 0.41, 0.42, 0.42, 0.42],  # 10
     [0.33, 0.41, 0.44, 0.45, 0.50, 0.50, 0.49, 0.53, 0.52, 0.53, 0.55, 0.54, 0.53, 0.55],  # 20
     [0.36, 0.46, 0.44, 0.54, 0.59, 0.60, 0.64, 0.63, 0.62, 0.63, 0.66, 0.65, 0.63, 0.65],  # 40
