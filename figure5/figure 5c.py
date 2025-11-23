@@ -14,7 +14,7 @@ from torch.utils.data import DataLoader, TensorDataset
 import metl
 
 
-# -----User config-----
+
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
@@ -32,7 +32,7 @@ UUID_A = "epegcFiH"      # METL-L-2M-3D pretrained on GB1 (Rosetta-only)
 UUID_B = None           
 
 
-# -----Global protocol settings-----
+
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -54,7 +54,7 @@ MAX_GRAD_NORM = 0.5
 GLOBAL_SEED = 1  # controls fixed test split + replicate sampling
 
 
-# -----Utilities-----
+
 
 def _clean_seq(s: str) -> str:
     return s.replace(" ", "").replace("\n", "").replace("\r", "").strip()
